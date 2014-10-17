@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15A92BB19F0EBC20047ACFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92BA19F0EBC20047ACFB /* main.m */; };
+		B15A92BE19F0EBC20047ACFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92BD19F0EBC20047ACFB /* AppDelegate.m */; };
+		B15A92C119F0EBC20047ACFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92C019F0EBC20047ACFB /* ViewController.m */; };
+		B15A92C419F0EBC20047ACFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15A92C219F0EBC20047ACFB /* Main.storyboard */; };
+		B15A92C619F0EBC20047ACFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15A92C519F0EBC20047ACFB /* Images.xcassets */; };
+		B15A92C919F0EBC20047ACFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15A92C719F0EBC20047ACFB /* LaunchScreen.xib */; };
+		B15A92D519F0EBC20047ACFB /* iosamr_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92D419F0EBC20047ACFB /* iosamr_testTests.m */; };
+		B15A92E819F0EC920047ACFB /* test.amr in Resources */ = {isa = PBXBuildFile; fileRef = B15A92E719F0EC920047ACFB /* test.amr */; };
+		B15A92EA19F0ED750047ACFB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15A92E919F0ED750047ACFB /* AVFoundation.framework */; };
+		B15A92EB19F0EE530047ACFB /* libiosamrsupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15A92E419F0EBD30047ACFB /* libiosamrsupport.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B15A92CF19F0EBC20047ACFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15A92AD19F0EBC20047ACFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B15A92B419F0EBC20047ACFB;
+			remoteInfo = "iosamr-test";
+		};
+		B15A92E319F0EBD30047ACFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15A92DE19F0EBD20047ACFB /* iosamrsupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B16CA7D619F0CCEB00B15C15;
+			remoteInfo = iosamrsupport;
+		};
+		B15A92E519F0EBD30047ACFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15A92DE19F0EBD20047ACFB /* iosamrsupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B16CA7E119F0CCEB00B15C15;
+			remoteInfo = iosamrsupportTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B15A92B519F0EBC20047ACFB /* iosamr-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iosamr-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15A92B919F0EBC20047ACFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15A92BA19F0EBC20047ACFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B15A92BC19F0EBC20047ACFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B15A92BD19F0EBC20047ACFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B15A92BF19F0EBC20047ACFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B15A92C019F0EBC20047ACFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B15A92C319F0EBC20047ACFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B15A92C519F0EBC20047ACFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B15A92C819F0EBC20047ACFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B15A92CE19F0EBC20047ACFB /* iosamr-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iosamr-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15A92D319F0EBC20047ACFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15A92D419F0EBC20047ACFB /* iosamr_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosamr_testTests.m; sourceTree = "<group>"; };
+		B15A92DE19F0EBD20047ACFB /* iosamrsupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iosamrsupport.xcodeproj; path = ../iosamrsupport/iosamrsupport.xcodeproj; sourceTree = "<group>"; };
+		B15A92E719F0EC920047ACFB /* test.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.amr; sourceTree = "<group>"; };
+		B15A92E919F0ED750047ACFB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15A92B219F0EBC20047ACFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15A92EB19F0EE530047ACFB /* libiosamrsupport.a in Frameworks */,
+				B15A92EA19F0ED750047ACFB /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15A92CB19F0EBC20047ACFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B15A92AC19F0EBC20047ACFB = {
+			isa = PBXGroup;
+			children = (
+				B15A92E919F0ED750047ACFB /* AVFoundation.framework */,
+				B15A92E719F0EC920047ACFB /* test.amr */,
+				B15A92DE19F0EBD20047ACFB /* iosamrsupport.xcodeproj */,
+				B15A92B719F0EBC20047ACFB /* iosamr-test */,
+				B15A92D119F0EBC20047ACFB /* iosamr-testTests */,
+				B15A92B619F0EBC20047ACFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B15A92B619F0EBC20047ACFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92B519F0EBC20047ACFB /* iosamr-test.app */,
+				B15A92CE19F0EBC20047ACFB /* iosamr-testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15A92B719F0EBC20047ACFB /* iosamr-test */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92BC19F0EBC20047ACFB /* AppDelegate.h */,
+				B15A92BD19F0EBC20047ACFB /* AppDelegate.m */,
+				B15A92BF19F0EBC20047ACFB /* ViewController.h */,
+				B15A92C019F0EBC20047ACFB /* ViewController.m */,
+				B15A92C219F0EBC20047ACFB /* Main.storyboard */,
+				B15A92C519F0EBC20047ACFB /* Images.xcassets */,
+				B15A92C719F0EBC20047ACFB /* LaunchScreen.xib */,
+				B15A92B819F0EBC20047ACFB /* Supporting Files */,
+			);
+			path = "iosamr-test";
+			sourceTree = "<group>";
+		};
+		B15A92B819F0EBC20047ACFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92B919F0EBC20047ACFB /* Info.plist */,
+				B15A92BA19F0EBC20047ACFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15A92D119F0EBC20047ACFB /* iosamr-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92D419F0EBC20047ACFB /* iosamr_testTests.m */,
+				B15A92D219F0EBC20047ACFB /* Supporting Files */,
+			);
+			path = "iosamr-testTests";
+			sourceTree = "<group>";
+		};
+		B15A92D219F0EBC20047ACFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92D319F0EBC20047ACFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15A92DF19F0EBD20047ACFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15A92E419F0EBD30047ACFB /* libiosamrsupport.a */,
+				B15A92E619F0EBD30047ACFB /* iosamrsupportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15A92B419F0EBC20047ACFB /* iosamr-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15A92D819F0EBC20047ACFB /* Build configuration list for PBXNativeTarget "iosamr-test" */;
+			buildPhases = (
+				B15A92B119F0EBC20047ACFB /* Sources */,
+				B15A92B219F0EBC20047ACFB /* Frameworks */,
+				B15A92B319F0EBC20047ACFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iosamr-test";
+			productName = "iosamr-test";
+			productReference = B15A92B519F0EBC20047ACFB /* iosamr-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B15A92CD19F0EBC20047ACFB /* iosamr-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15A92DB19F0EBC20047ACFB /* Build configuration list for PBXNativeTarget "iosamr-testTests" */;
+			buildPhases = (
+				B15A92CA19F0EBC20047ACFB /* Sources */,
+				B15A92CB19F0EBC20047ACFB /* Frameworks */,
+				B15A92CC19F0EBC20047ACFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15A92D019F0EBC20047ACFB /* PBXTargetDependency */,
+			);
+			name = "iosamr-testTests";
+			productName = "iosamr-testTests";
+			productReference = B15A92CE19F0EBC20047ACFB /* iosamr-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15A92AD19F0EBC20047ACFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = shengdoushi;
+				TargetAttributes = {
+					B15A92B419F0EBC20047ACFB = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B15A92CD19F0EBC20047ACFB = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B15A92B419F0EBC20047ACFB;
+					};
+				};
+			};
+			buildConfigurationList = B15A92B019F0EBC20047ACFB /* Build configuration list for PBXProject "iosamr-test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15A92AC19F0EBC20047ACFB;
+			productRefGroup = B15A92B619F0EBC20047ACFB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B15A92DF19F0EBD20047ACFB /* Products */;
+					ProjectRef = B15A92DE19F0EBD20047ACFB /* iosamrsupport.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B15A92B419F0EBC20047ACFB /* iosamr-test */,
+				B15A92CD19F0EBC20047ACFB /* iosamr-testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B15A92E419F0EBD30047ACFB /* libiosamrsupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiosamrsupport.a;
+			remoteRef = B15A92E319F0EBD30047ACFB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B15A92E619F0EBD30047ACFB /* iosamrsupportTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iosamrsupportTests.xctest;
+			remoteRef = B15A92E519F0EBD30047ACFB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15A92B319F0EBC20047ACFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15A92C419F0EBC20047ACFB /* Main.storyboard in Resources */,
+				B15A92C919F0EBC20047ACFB /* LaunchScreen.xib in Resources */,
+				B15A92E819F0EC920047ACFB /* test.amr in Resources */,
+				B15A92C619F0EBC20047ACFB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15A92CC19F0EBC20047ACFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15A92B119F0EBC20047ACFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15A92C119F0EBC20047ACFB /* ViewController.m in Sources */,
+				B15A92BE19F0EBC20047ACFB /* AppDelegate.m in Sources */,
+				B15A92BB19F0EBC20047ACFB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15A92CA19F0EBC20047ACFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15A92D519F0EBC20047ACFB /* iosamr_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15A92D019F0EBC20047ACFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B15A92B419F0EBC20047ACFB /* iosamr-test */;
+			targetProxy = B15A92CF19F0EBC20047ACFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B15A92C219F0EBC20047ACFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15A92C319F0EBC20047ACFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B15A92C719F0EBC20047ACFB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15A92C819F0EBC20047ACFB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15A92D619F0EBC20047ACFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B15A92D719F0EBC20047ACFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B15A92D919F0EBC20047ACFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../iosamrsupport/amr\"/**",
+				);
+				INFOPLIST_FILE = "iosamr-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B15A92DA19F0EBC20047ACFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../iosamrsupport/amr\"/**",
+				);
+				INFOPLIST_FILE = "iosamr-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B15A92DC19F0EBC20047ACFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iosamr-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosamr-test.app/iosamr-test";
+			};
+			name = Debug;
+		};
+		B15A92DD19F0EBC20047ACFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iosamr-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosamr-test.app/iosamr-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15A92B019F0EBC20047ACFB /* Build configuration list for PBXProject "iosamr-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15A92D619F0EBC20047ACFB /* Debug */,
+				B15A92D719F0EBC20047ACFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15A92D819F0EBC20047ACFB /* Build configuration list for PBXNativeTarget "iosamr-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15A92D919F0EBC20047ACFB /* Debug */,
+				B15A92DA19F0EBC20047ACFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B15A92DB19F0EBC20047ACFB /* Build configuration list for PBXNativeTarget "iosamr-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15A92DC19F0EBC20047ACFB /* Debug */,
+				B15A92DD19F0EBC20047ACFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15A92AD19F0EBC20047ACFB /* Project object */;
+}
