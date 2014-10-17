@@ -484,6 +484,7 @@
 				B15A92DA19F0EBC20047ACFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B15A92DB19F0EBC20047ACFB /* Build configuration list for PBXNativeTarget "iosamr-testTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				B15A92DD19F0EBC20047ACFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "IosAmrAudioCache.h"
 
 @interface ViewController : UIViewController
 @property (nonatomic, strong) AVAudioPlayer* player;
+@property (nonatomic, assign) int playingId;
+@property (nonatomic, strong) IosAudioCacheManager* amrCache;
 
 - (IBAction)onClickPlayAmr:(id)sender;
 - (IBAction)onClickGetAmrDuration:(id)sender;
+- (IBAction)pause:(id)sender;
+- (IBAction)resume:(id)sender;
+- (IBAction)stop:(id)sender;
 
 @end
 
