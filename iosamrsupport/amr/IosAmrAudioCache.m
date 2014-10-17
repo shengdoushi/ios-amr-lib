@@ -50,6 +50,12 @@
     [self.audioIdCache setValue:item forKey:[NSString stringWithFormat:@"%d", item.audioId]];
 }
 
+-(void)removeAllAudiosFromCache
+{
+    [self.audioCache removeAllObjects];
+    [self.audioIdCache removeAllObjects];
+}
+
 -(void)removeAudioItemById:(int)audioId
 {
     GhAmrAudioItem* item = [self audioItemForId:audioId];
@@ -137,6 +143,11 @@
 {
     if (audioId < 1) return ;
     [self removeAudioItemById:audioId];
+}
+
+-(void)unloadAllAudios
+{
+    [self removeAllAudiosFromCache];
 }
 
 -(float)getAudioDuration:(int)audioId

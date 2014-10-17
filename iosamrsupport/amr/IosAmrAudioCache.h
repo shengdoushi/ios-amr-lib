@@ -21,4 +21,6 @@
 -(int)preloadAudio:(NSString*)file;
 -(void)unloadAudio:(int)audioId;
 -(float)getAudioDuration:(int)audioId;
+
+-(void)unloadAllAudios;
 @end
