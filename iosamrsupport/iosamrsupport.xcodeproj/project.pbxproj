@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B15A92F119F0FD960047ACFB /* IosAmrAudioCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92EF19F0FD960047ACFB /* IosAmrAudioCache.m */; };
+		B15A92F719F10F330047ACFB /* CppIosAmrAudioCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = B15A92F519F10F330047ACFB /* CppIosAmrAudioCache.mm */; };
 		B16CA7DA19F0CCEB00B15C15 /* iosamrsupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16CA7D919F0CCEB00B15C15 /* iosamrsupport.h */; };
 		B16CA7DC19F0CCEB00B15C15 /* iosamrsupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA7DB19F0CCEB00B15C15 /* iosamrsupport.m */; };
 		B16CA83419F0E44500B15C15 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA82719F0E44500B15C15 /* amrFileCodec.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		B15A92EF19F0FD960047ACFB /* IosAmrAudioCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosAmrAudioCache.m; sourceTree = "<group>"; };
 		B15A92F019F0FD960047ACFB /* IosAmrAudioCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAmrAudioCache.h; sourceTree = "<group>"; };
+		B15A92F519F10F330047ACFB /* CppIosAmrAudioCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppIosAmrAudioCache.mm; sourceTree = "<group>"; };
+		B15A92F619F10F330047ACFB /* CppIosAmrAudioCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppIosAmrAudioCache.h; sourceTree = "<group>"; };
 		B16CA7D619F0CCEB00B15C15 /* libiosamrsupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiosamrsupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16CA7D919F0CCEB00B15C15 /* iosamrsupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iosamrsupport.h; sourceTree = "<group>"; };
 		B16CA7DB19F0CCEB00B15C15 /* iosamrsupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosamrsupport.m; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				B16CA82F19F0E44500B15C15 /* lib */,
 				B15A92EF19F0FD960047ACFB /* IosAmrAudioCache.m */,
 				B15A92F019F0FD960047ACFB /* IosAmrAudioCache.h */,
+				B15A92F519F10F330047ACFB /* CppIosAmrAudioCache.mm */,
+				B15A92F619F10F330047ACFB /* CppIosAmrAudioCache.h */,
 			);
 			path = amr;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15A92F719F10F330047ACFB /* CppIosAmrAudioCache.mm in Sources */,
 				B15A92F119F0FD960047ACFB /* IosAmrAudioCache.m in Sources */,
 				B16CA7DC19F0CCEB00B15C15 /* iosamrsupport.m in Sources */,
 				B16CA83419F0E44500B15C15 /* amrFileCodec.m in Sources */,

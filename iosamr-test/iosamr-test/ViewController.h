@@ -13,7 +13,7 @@
 @interface ViewController : UIViewController
 @property (nonatomic, strong) AVAudioPlayer* player;
 @property (nonatomic, assign) int playingId;
-@property (nonatomic, strong) IosAudioCacheManager* amrCache;
+//@property (nonatomic, strong) IosAudioCache* amrCache;
 
 - (IBAction)onClickPlayAmr:(id)sender;
 - (IBAction)onClickGetAmrDuration:(id)sender;

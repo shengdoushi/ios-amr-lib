@@ -23,10 +23,10 @@
 @implementation GhAmrAudioItem
 @end
 
-@interface IosAudioCacheManager(Private)
+@interface IosAudioCache(Private)
 @end
 
-@implementation IosAudioCacheManager(Private)
+@implementation IosAudioCache(Private)
 -(GhAmrAudioItem*)audioItemForId:(int)audioId
 {
     if (audioId <= 0) return nil;
@@ -64,7 +64,7 @@
 }
 @end
 
-@implementation IosAudioCacheManager
+@implementation IosAudioCache
 -(id)init
 {
     if ((self = [super init]))

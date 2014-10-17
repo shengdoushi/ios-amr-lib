@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
-@interface IosAudioCacheManager : NSObject
+@interface IosAudioCache : NSObject
 
 @property (nonatomic, strong) NSMutableDictionary* audioCache;
 @property (nonatomic, strong) NSMutableDictionary* audioIdCache;
