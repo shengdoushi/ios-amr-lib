@@ -27,7 +27,7 @@ public:
     void unloadAudio(int audioId);
     
     void unloadAllAudios();
-    float getAudioDuration(int audioId);
+    double getAudioDuration(int audioId);
     
 private:
     CppIosAmrAudioCacheImpl* m_impl;

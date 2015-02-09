@@ -13,7 +13,7 @@
 
 @interface GhAmrAudioItem : NSObject
 @property (nonatomic, assign) int audioId;  // 这个不允许自己设置
-@property (nonatomic, assign) float duration;
+@property (nonatomic, assign) double duration;
 @property (nonatomic, strong) NSString* file;
 @property (nonatomic, strong) NSString* filePath;
 @property (nonatomic, strong) NSData* data;
@@ -150,7 +150,7 @@
     [self removeAllAudiosFromCache];
 }
 
--(float)getAudioDuration:(int)audioId
+-(double)getAudioDuration:(int)audioId
 {
     GhAmrAudioItem* item = [self audioItemForId:audioId];
     return item.duration;

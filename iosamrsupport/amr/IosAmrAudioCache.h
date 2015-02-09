@@ -20,7 +20,7 @@
 -(void)stopAudio:(int)audioId;
 -(int)preloadAudio:(NSString*)file;
 -(void)unloadAudio:(int)audioId;
--(float)getAudioDuration:(int)audioId;
+-(double)getAudioDuration:(int)audioId;
 
 -(void)unloadAllAudios;
 @end

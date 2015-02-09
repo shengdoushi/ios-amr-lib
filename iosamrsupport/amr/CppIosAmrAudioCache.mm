@@ -73,7 +73,7 @@ int CppIosAmrAudioCache::preloadAudio(const std::string &strPath)
     return [m_impl->m_objcCache preloadAudio:[NSString stringWithUTF8String:strPath.c_str()]];
 }
 
-float CppIosAmrAudioCache::getAudioDuration(int audioId)
+double CppIosAmrAudioCache::getAudioDuration(int audioId)
 {
     return [m_impl->m_objcCache getAudioDuration:audioId];
 }
