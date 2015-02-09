@@ -164,5 +164,12 @@
     }
     return tm;
 }
+-(void)seekAudio:(int)audioId toTime:(double)time
+{
+    GhAmrAudioItem* item = [self audioItemForId:audioId];
+    if (item && item.audioPlayer){
+        [item.audioPlayer setCurrentTime:time];
+    }
+}
 @end
 

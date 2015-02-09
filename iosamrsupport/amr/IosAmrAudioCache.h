@@ -21,7 +21,12 @@
 -(int)preloadAudio:(NSString*)file;
 -(void)unloadAudio:(int)audioId;
 -(double)getAudioDuration:(int)audioId;
+
+// 获取音频的播放时间
 -(double)getAudioTime:(int)audioId;
+
+// 从指定位置开始播放
+-(void)seekAudio:(int)audioId toTime:(double)time;
 
 -(void)unloadAllAudios;
 @end

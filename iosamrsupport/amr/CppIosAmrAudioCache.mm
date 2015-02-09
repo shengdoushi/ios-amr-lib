@@ -91,3 +91,8 @@ void CppIosAmrAudioCache::unloadAudio(int audioId)
 {
     [m_impl->m_objcCache unloadAudio:audioId];
 }
+
+void CppIosAmrAudioCache::seekAudioToTime(int audioId, double time)
+{
+    [m_impl->m_objcCache seekAudio:audioId toTime:time];
+}

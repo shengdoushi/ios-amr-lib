@@ -31,6 +31,8 @@ public:
     
     // 获取当前播放时长
     double getAudioTime(int audioId);
+    // 跳转到指定位置
+    void seekAudioToTime(int audioId, double time);
 private:
     CppIosAmrAudioCacheImpl* m_impl;
 };
