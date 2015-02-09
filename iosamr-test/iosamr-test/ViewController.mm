@@ -21,6 +21,8 @@
     [super viewDidLoad];
 //    self.amrCache = [[IosAudioCache alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,23 +30,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onTimer
+{
+    double tm = CppIosAmrAudioCache::sharedCache()->getAudioTime(self.playingId);
+    self.timeLabel.text = [NSString stringWithFormat:@"%.2fs", tm];
+    self.timeSlider.value = tm;
+}
+
+- (IBAction)onTimeSliderValueChanged:(id)sender {
+    UISlider* slider = sender;
+    float value = slider.value;
+    CppIosAmrAudioCache::sharedCache()->seekAudioToTime(self.playingId, value);
+}
+
 - (IBAction)onClickPlayAmr:(id)sender {
     self.playingId = CppIosAmrAudioCache::sharedCache()->playAudio("test.amr");
     
-    return;
-    
-    NSString* filePath = @"test.amr";
-    filePath = [[NSBundle mainBundle] pathForResource:filePath ofType:@""];
-    
-    NSData* data = [NSData dataWithContentsOfFile:filePath];
-    data = DecodeAMRToWAVE(data);
-    
-    long lWavSize = 419 * 160 * sizeof(short);
-    float fSec = lWavSize * 1.0f / 16000;
-    
-    self.player = [[AVAudioPlayer alloc] initWithData:data error:nil];
-    [self.player prepareToPlay];
-    [self.player play];
+    // 进度条
+    self.timeSlider.maximumValue = CppIosAmrAudioCache::sharedCache()->getAudioDuration(self.playingId);
 }
 
 - (IBAction)onClickGetAmrDuration:(id)sender {
