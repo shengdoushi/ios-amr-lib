@@ -155,5 +155,14 @@
     GhAmrAudioItem* item = [self audioItemForId:audioId];
     return item.duration;
 }
+-(double)getAudioTime:(int)audioId
+{
+    GhAmrAudioItem* item = [self audioItemForId:audioId];
+    double tm = 0;
+    if (item && item.audioPlayer){
+        tm = [item.audioPlayer currentTime];
+    }
+    return tm;
+}
 @end
 

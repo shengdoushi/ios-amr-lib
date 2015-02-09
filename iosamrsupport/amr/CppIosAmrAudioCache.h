@@ -29,6 +29,8 @@ public:
     void unloadAllAudios();
     double getAudioDuration(int audioId);
     
+    // 获取当前播放时长
+    double getAudioTime(int audioId);
 private:
     CppIosAmrAudioCacheImpl* m_impl;
 };

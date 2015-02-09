@@ -78,6 +78,10 @@ double CppIosAmrAudioCache::getAudioDuration(int audioId)
     return [m_impl->m_objcCache getAudioDuration:audioId];
 }
 
+double CppIosAmrAudioCache::getAudioTime(int audioId)
+{
+    return [m_impl->m_objcCache getAudioTime:audioId];
+}
 void CppIosAmrAudioCache::unloadAllAudios()
 {
     [m_impl->m_objcCache unloadAllAudios];
