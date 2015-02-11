@@ -12,8 +12,15 @@
 		B16CA7DA19F0CCEB00B15C15 /* iosamrsupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16CA7D919F0CCEB00B15C15 /* iosamrsupport.h */; };
 		B16CA7DC19F0CCEB00B15C15 /* iosamrsupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA7DB19F0CCEB00B15C15 /* iosamrsupport.m */; };
 		B16CA83419F0E44500B15C15 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA82719F0E44500B15C15 /* amrFileCodec.m */; };
-		B16CA83519F0E44500B15C15 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B16CA83019F0E44500B15C15 /* libopencore-amrnb.a */; };
-		B16CA83619F0E44500B15C15 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B16CA83119F0E44500B15C15 /* libopencore-amrwb.a */; };
+		B1DA61281A8AEC1300FC76D4 /* CppIosAmrAudioCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = B15A92F519F10F330047ACFB /* CppIosAmrAudioCache.mm */; };
+		B1DA61291A8AEC1300FC76D4 /* IosAmrAudioCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B15A92EF19F0FD960047ACFB /* IosAmrAudioCache.m */; };
+		B1DA612A1A8AEC1300FC76D4 /* iosamrsupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA7DB19F0CCEB00B15C15 /* iosamrsupport.m */; };
+		B1DA612B1A8AEC1300FC76D4 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = B16CA82719F0E44500B15C15 /* amrFileCodec.m */; };
+		B1DA61301A8AEC1300FC76D4 /* iosamrsupport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B16CA7D919F0CCEB00B15C15 /* iosamrsupport.h */; };
+		B1DA613C1A8AECB100FC76D4 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DA613A1A8AECB100FC76D4 /* libopencore-amrnb.a */; };
+		B1DA613D1A8AECB100FC76D4 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DA613B1A8AECB100FC76D4 /* libopencore-amrwb.a */; };
+		B1DA61411A8AED3900FC76D4 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DA613F1A8AED3900FC76D4 /* libopencore-amrnb.a */; };
+		B1DA61421A8AED3900FC76D4 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DA61401A8AED3900FC76D4 /* libopencore-amrwb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +31,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				B16CA7DA19F0CCEB00B15C15 /* iosamrsupport.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DA612F1A8AEC1300FC76D4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B1DA61301A8AEC1300FC76D4 /* iosamrsupport.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +62,11 @@
 		B16CA82B19F0E44500B15C15 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
 		B16CA82D19F0E44500B15C15 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
 		B16CA82E19F0E44500B15C15 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
-		B16CA83019F0E44500B15C15 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		B16CA83119F0E44500B15C15 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		B1DA61341A8AEC1300FC76D4 /* libiosamrsupport-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiosamrsupport-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DA613A1A8AECB100FC76D4 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		B1DA613B1A8AECB100FC76D4 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		B1DA613F1A8AED3900FC76D4 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		B1DA61401A8AED3900FC76D4 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16CA83619F0E44500B15C15 /* libopencore-amrwb.a in Frameworks */,
-				B16CA83519F0E44500B15C15 /* libopencore-amrnb.a in Frameworks */,
+				B1DA61421A8AED3900FC76D4 /* libopencore-amrwb.a in Frameworks */,
+				B1DA61411A8AED3900FC76D4 /* libopencore-amrnb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DA612C1A8AEC1300FC76D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DA613C1A8AECB100FC76D4 /* libopencore-amrnb.a in Frameworks */,
+				B1DA613D1A8AECB100FC76D4 /* libopencore-amrwb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +113,7 @@
 			children = (
 				B16CA7D619F0CCEB00B15C15 /* libiosamrsupport.a */,
 				B16CA7E119F0CCEB00B15C15 /* iosamrsupportTests.xctest */,
+				B1DA61341A8AEC1300FC76D4 /* libiosamrsupport-mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,10 +188,28 @@
 		B16CA82F19F0E44500B15C15 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B16CA83019F0E44500B15C15 /* libopencore-amrnb.a */,
-				B16CA83119F0E44500B15C15 /* libopencore-amrwb.a */,
+				B1DA613E1A8AED3900FC76D4 /* ios */,
+				B1DA61391A8AECB100FC76D4 /* mac */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		B1DA61391A8AECB100FC76D4 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA613A1A8AECB100FC76D4 /* libopencore-amrnb.a */,
+				B1DA613B1A8AECB100FC76D4 /* libopencore-amrwb.a */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		B1DA613E1A8AED3900FC76D4 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA613F1A8AED3900FC76D4 /* libopencore-amrnb.a */,
+				B1DA61401A8AED3900FC76D4 /* libopencore-amrwb.a */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +249,23 @@
 			productReference = B16CA7E119F0CCEB00B15C15 /* iosamrsupportTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B1DA61261A8AEC1300FC76D4 /* iosamrsupport-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DA61311A8AEC1300FC76D4 /* Build configuration list for PBXNativeTarget "iosamrsupport-mac" */;
+			buildPhases = (
+				B1DA61271A8AEC1300FC76D4 /* Sources */,
+				B1DA612C1A8AEC1300FC76D4 /* Frameworks */,
+				B1DA612F1A8AEC1300FC76D4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iosamrsupport-mac";
+			productName = iosamrsupport;
+			productReference = B1DA61341A8AEC1300FC76D4 /* libiosamrsupport-mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +297,7 @@
 			targets = (
 				B16CA7D519F0CCEB00B15C15 /* iosamrsupport */,
 				B16CA7E019F0CCEB00B15C15 /* iosamrsupportTests */,
+				B1DA61261A8AEC1300FC76D4 /* iosamrsupport-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DA61271A8AEC1300FC76D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DA61281A8AEC1300FC76D4 /* CppIosAmrAudioCache.mm in Sources */,
+				B1DA61291A8AEC1300FC76D4 /* IosAmrAudioCache.m in Sources */,
+				B1DA612A1A8AEC1300FC76D4 /* iosamrsupport.m in Sources */,
+				B1DA612B1A8AEC1300FC76D4 /* amrFileCodec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +430,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/amr/lib",
+					"$(PROJECT_DIR)/amr/lib/ios",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +449,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/amr/lib",
+					"$(PROJECT_DIR)/amr/lib/ios",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +487,46 @@
 			};
 			name = Release;
 		};
+		B1DA61321A8AEC1300FC76D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/amr\"/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/amr/lib",
+					"$(PROJECT_DIR)/amr/lib/mac",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "iosamrsupport-mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B1DA61331A8AEC1300FC76D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/amr\"/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/amr/lib",
+					"$(PROJECT_DIR)/amr/lib/mac",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "iosamrsupport-mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +553,15 @@
 			buildConfigurations = (
 				B16CA7EB19F0CCEB00B15C15 /* Debug */,
 				B16CA7EC19F0CCEB00B15C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DA61311A8AEC1300FC76D4 /* Build configuration list for PBXNativeTarget "iosamrsupport-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DA61321A8AEC1300FC76D4 /* Debug */,
+				B1DA61331A8AEC1300FC76D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
