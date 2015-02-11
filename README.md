@@ -3,6 +3,14 @@
 ## 概述
 内部使用 openamr 库来进行转码播放。
 
+## 使用
+
+将 iosamrsupport 下的 iosamrsupport.xcodeproj 拖入你的工程中。
+
+Linked Frameworks and Libraries 中加入:
+ - Mac 使用 libiosamrsupport-mac.a
+ - Ios 使用 libiosamrsupport.a
+
 ## 接口
 
 ```Objective-C
