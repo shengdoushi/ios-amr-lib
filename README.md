@@ -1,4 +1,4 @@
-# 一个简单的ios上播放 amr 例子
+# 一个简单的ios/mac上播放 amr 例子
 
 ## 概述
 内部使用 openamr 库来进行转码播放。
@@ -6,6 +6,7 @@
 ## 接口
 
 ```Objective-C
+//#import <IosAmrAudioCache.h>
 // 创建一个 audioCache
 IosAudioCache* cache = [[IosAudioCache alloc] init];
 // 播放一个文件或预加载一个文件来获得 音频的id
@@ -25,6 +26,7 @@ double offset = [cache getAudioTime:audioId]; // 获取当前播放时间
 ## C++ 接口
 
 ```C++
+// #include "CppIosAmrAudioCache.h"
 // 创建一个 audioCache, 可以使用 sharedCache() 获取一个内置的全局实例
 CppICppIosAmrAudioCache* cache = CppIosAmrAudioCache::sharedCache();
 // 播放一个文件或预加载一个文件来获得 音频的id
