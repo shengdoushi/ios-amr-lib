@@ -52,6 +52,10 @@
 
 -(void)removeAllAudiosFromCache
 {
+    [self.audioCache enumerateKeysAndObjectsUsingBlock:^(id key, GhAmrAudioItem* obj, BOOL *stop) {
+        if ([obj.audioPlayer isPlaying])
+            [obj.audioPlayer stop];
+    }];
     [self.audioCache removeAllObjects];
     [self.audioIdCache removeAllObjects];
 }
@@ -59,6 +63,8 @@
 -(void)removeAudioItemById:(int)audioId
 {
     GhAmrAudioItem* item = [self audioItemForId:audioId];
+    if ([item.audioPlayer isPlaying])
+        [item.audioPlayer stop];
     [self.audioCache removeObjectForKey:item.file];
     [self.audioIdCache removeObjectForKey:[NSString stringWithFormat:@"%d", item.audioId]];
 }
