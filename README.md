@@ -3,6 +3,13 @@
 ## 概述
 内部使用 openamr 库来进行转码播放。
 
+支持平台:
+
+- ios6+, 支持64位
+- osx
+
+
+
 ## 使用
 
 将 iosamrsupport 下的 iosamrsupport.xcodeproj 拖入你的工程中。
