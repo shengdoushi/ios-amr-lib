@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsY-fq-sdL">
-                                <rect key="frame" x="277" y="128" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsY-fq-sdL">
+                                <rect key="frame" x="267" y="51" width="57" height="30"/>
+                                <animations/>
                                 <state key="normal" title="播放amr">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,8 +28,9 @@
                                     <action selector="onClickPlayAmr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSe-c6-5wc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLG-CF-PUE">
-                                <rect key="frame" x="117" y="279" width="361" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLG-CF-PUE">
+                                <rect key="frame" x="107" y="213" width="361" height="30"/>
+                                <animations/>
                                 <state key="normal" title="获取amr时长">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,8 +38,9 @@
                                     <action selector="onClickGetAmrDuration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lt-kv-Ppr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-If-Db4">
-                                <rect key="frame" x="282" y="174" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-If-Db4">
+                                <rect key="frame" x="272" y="97" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="暂停">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,8 +48,9 @@
                                     <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBD-hp-hvZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4By-Yr-noG">
-                                <rect key="frame" x="285" y="212" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4By-Yr-noG">
+                                <rect key="frame" x="275" y="135" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="恢复">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,8 +58,30 @@
                                     <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYu-Ns-Llq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr3-BB-hRU">
-                                <rect key="frame" x="290" y="241" width="30" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="当前播放时间:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKB-lm-WO9">
+                                <rect key="frame" x="172" y="271" width="107" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-24-4DF">
+                                <rect key="frame" x="307" y="271" width="155" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="slS-ma-NFP">
+                                <rect key="frame" x="192" y="320" width="198" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="onTimeSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XVX-hQ-uKK"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr3-BB-hRU">
+                                <rect key="frame" x="280" y="173" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" title="停止">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -62,26 +89,21 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9E-JN-uO3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前播放时间:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKB-lm-WO9">
-                                <rect key="frame" x="213" y="368" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-24-4DF">
-                                <rect key="frame" x="348" y="368" width="155" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="slS-ma-NFP">
-                                <rect key="frame" x="233" y="417" width="198" height="31"/>
-                                <connections>
-                                    <action selector="onTimeSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XVX-hQ-uKK"/>
-                                </connections>
-                            </slider>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wr3-BB-hRU" firstAttribute="centerX" secondItem="lLG-CF-PUE" secondAttribute="centerX" id="0jD-bh-P1U"/>
+                            <constraint firstItem="RKB-lm-WO9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="57I-DX-cc9"/>
+                            <constraint firstItem="9MQ-24-4DF" firstAttribute="leading" secondItem="RKB-lm-WO9" secondAttribute="trailing" constant="28" id="5Hd-gI-7Pj"/>
+                            <constraint firstItem="qsY-fq-sdL" firstAttribute="centerX" secondItem="lLG-CF-PUE" secondAttribute="centerX" id="9Er-ku-fFs"/>
+                            <constraint firstItem="9MQ-24-4DF" firstAttribute="centerY" secondItem="RKB-lm-WO9" secondAttribute="centerY" id="R76-Dq-BAL"/>
+                            <constraint firstItem="pFe-If-Db4" firstAttribute="centerX" secondItem="lLG-CF-PUE" secondAttribute="centerX" id="RZa-ka-uQi"/>
+                            <constraint firstItem="slS-ma-NFP" firstAttribute="centerX" secondItem="lLG-CF-PUE" secondAttribute="centerX" id="Tof-Lv-EYA"/>
+                            <constraint firstItem="4By-Yr-noG" firstAttribute="centerX" secondItem="lLG-CF-PUE" secondAttribute="centerX" id="aQ5-2I-v8H"/>
+                            <constraint firstItem="slS-ma-NFP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="cXN-wP-vla"/>
+                            <constraint firstItem="qsY-fq-sdL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mK9-Xw-dcn"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="timeLabel" destination="9MQ-24-4DF" id="gjF-i1-uCH"/>
